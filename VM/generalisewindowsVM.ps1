@@ -32,5 +32,6 @@ Write-Host
 
 Write-Host "[3] Running Sysprep..."
 Set-Location "$env:WINDIR\system32\sysprep"
-Start-Process -FilePath ".\sysprep.exe" -ArgumentList "/generalize /shutdown" -Wait
-Write-Host "Sysprep initiated. The system will shut down once Sysprep completes."
+Start-Process -FilePath ".\sysprep.exe" -ArgumentList "/generalize /shutdown" 
+#-Wait
+#Write-Host "Sysprep initiated. The system will shut down once Sysprep completes."
